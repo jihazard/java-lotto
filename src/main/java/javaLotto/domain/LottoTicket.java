@@ -44,4 +44,5 @@ public class LottoTicket {
                 forEach(n -> System.out.print(n.getNo() + " "));
         System.out.println();
     }
+
 }

@@ -16,7 +16,6 @@ public class LottoNo {
         if(no == null || no.isEmpty()){
             throw new IllegalArgumentException("숫자를 입력해주세요");
         }
-        //this.no = Integer.parseInt(no);
     }
     private static LottoNo of(int number) {
         return new LottoNo(number);
@@ -36,7 +35,11 @@ public class LottoNo {
 
     @Override
     public int hashCode() {
-
         return Objects.hash(no);
+    }
+
+    @Override
+    public String toString() {
+        return no+" ";
     }
 }
